@@ -1,0 +1,126 @@
+.popupwa-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  animation: fadeIn 0.3s ease;
+}
+
+.popupwa-container {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  width: 420px;
+  max-width: 90%;
+  text-align: center;
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.3);
+  animation: slideIn 0.3s ease;
+}
+
+.popupwa-icon {
+  font-size: 60px;
+  margin-bottom: 15px;
+}
+
+.popupwa-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: #1e3a5f;
+  margin-bottom: 15px;
+}
+
+.popupwa-message {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.popupwa-message strong {
+  color: #25D366;
+  font-size: 18px;
+  display: block;
+  margin-top: 8px;
+}
+
+.popupwa-note {
+  font-size: 13px;
+  color: #ff8c00;
+  background: #fff8e7;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.popupwa-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.popupwa-btn {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.popupwa-btn-cancel {
+  background-color: #f0f0f0;
+  color: #666;
+}
+
+.popupwa-btn-cancel:hover {
+  background-color: #e0e0e0;
+  transform: translateY(-2px);
+}
+
+.popupwa-btn-confirm {
+  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+  color: white;
+}
+
+.popupwa-btn-confirm:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .popupwa-container {
+    padding: 20px;
+  }
+  
+  .popupwa-title {
+    font-size: 20px;
+  }
+  
+  .popupwa-btn {
+    padding: 10px 18px;
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,500 @@
+/* ========================================
+   PAGES.CSS - SEMUA HALAMAN
+   Ukuran teks lebih besar dan jelas
+   ======================================== */
+
+/* Container Utama */
+.page-container {
+  flex: 1;
+  min-height: 100vh;
+}
+
+/* ========== PAGE HEADER ========== */
+.page-header {
+  background: linear-gradient(135deg, #0a2b4e 0%, #1e3a5f 100%);
+  color: white;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.page-header h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+  font-weight: 800;
+  color: white;
+}
+
+.page-header p {
+  font-size: 20px;
+  opacity: 0.95;
+  color: #e0e0e0;
+}
+
+/* ========== PAGE SECTION ========== */
+.page-section {
+  padding: 60px 0;
+  background-color: #f8fafc;
+}
+
+/* ========== SECTION TITLE ========== */
+.section-title {
+  font-size: 36px;
+  color: #1e3a5f;
+  text-align: center;
+  margin-bottom: 45px;
+  position: relative;
+  padding-bottom: 15px;
+  font-weight: 800;
+}
+
+.section-title:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background-color: #ffc107;
+  border-radius: 2px;
+}
+
+/* ========== FEATURES (Beranda) ========== */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.feature {
+  text-align: center;
+  padding: 35px 25px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s;
+}
+
+.feature:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+  font-size: 60px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.feature h3 {
+  font-size: 22px;
+  color: #1e3a5f;
+  margin-bottom: 12px;
+  font-weight: 800;
+}
+
+.feature p {
+  font-size: 15px;
+  color: #5a6e8a;
+  line-height: 1.6;
+}
+
+/* ========== ARTICLES GRID ========== */
+.articles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.article-card {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  transition: all 0.3s;
+  border-left: 5px solid #ffc107;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.article-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+.article-date {
+  color: #ffc107;
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.article-card h3 {
+  font-size: 18px;
+  color: #1e3a5f;
+  margin-bottom: 12px;
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+.article-card p {
+  font-size: 14px;
+  color: #5a6e8a;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.read-more {
+  color: #ffc107;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+/* ========== KONTAK GRID ========== */
+.kontak-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.kontak-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.info-card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.info-icon {
+  font-size: 50px;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.info-card h3 {
+  font-size: 20px;
+  color: #1e3a5f;
+  margin-bottom: 12px;
+  font-weight: 800;
+}
+
+.info-card p {
+  font-size: 15px;
+  color: #5a6e8a;
+  line-height: 1.6;
+}
+
+/* ========== JOIN INFO BOX (Ingin Bergabung) ========== */
+.join-info-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  background: linear-gradient(135deg, #1e3a5f 0%, #0a2b4e 100%);
+  border-radius: 24px;
+  padding: 45px;
+  margin-top: 40px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.join-icon {
+  font-size: 80px;
+  background: #ffc107;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 60px;
+  flex-shrink: 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.join-content {
+  flex: 1;
+}
+
+.join-content h3 {
+  color: #ffc107;
+  font-size: 28px;
+  margin-bottom: 15px;
+  font-weight: 800;
+}
+
+.join-content p {
+  color: white;
+  margin: 12px 0;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.join-requirements {
+  margin-top: 15px !important;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.join-content ul {
+  margin: 10px 0 15px 25px;
+  list-style: none;
+}
+
+.join-content ul li {
+  color: #e0e0e0;
+  margin: 10px 0;
+  padding-left: 5px;
+  font-size: 16px;
+}
+
+.btn-join {
+  background: linear-gradient(135deg, #ffc107 0%, #ff8c00 100%);
+  color: #1e3a5f;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: all 0.3s;
+}
+
+.btn-join:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255, 193, 7, 0.4);
+}
+
+.join-note {
+  margin-top: 15px !important;
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+/* ========== ACTIVATION BOX ========== */
+.activation-section {
+  margin: 40px 0;
+}
+
+.activation-box {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background: linear-gradient(135deg, #ffc107 0%, #ff8c00 100%);
+  border-radius: 20px;
+  padding: 35px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.activation-icon {
+  font-size: 60px;
+  background: white;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.activation-content {
+  flex: 1;
+}
+
+.activation-content h3 {
+  color: #1e3a5f;
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.activation-content p {
+  color: #1e3a5f;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.btn-activation {
+  background: #1e3a5f;
+  color: white;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 40px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-activation:hover {
+  background: #0a2b4e;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ========== JOIN FORM ========== */
+.join-form {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.join-form h4 {
+  color: #1e3a5f;
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.join-form input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.btn-submit {
+  background: #28a745;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-cancel-form {
+  background: #6c757d;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* ========== HALAMAN ADMIN ========== */
+.admin-dashboard {
+  padding: 40px;
+  background: #f5f7fa;
+  min-height: 100vh;
+}
+
+.admin-header h1 {
+  font-size: 32px;
+  color: #1e3a5f;
+}
+
+.admin-welcome {
+  font-size: 16px;
+  background: #1e3a5f;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 30px;
+}
+
+.btn-logout {
+  font-size: 14px;
+  padding: 8px 20px;
+}
+
+.admin-menu h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.menu-card h3 {
+  font-size: 18px;
+}
+
+.menu-card p {
+  font-size: 14px;
+}
+
+/* ========== TABEL ADMIN ========== */
+.admin-table th,
+.admin-table td {
+  padding: 12px 15px;
+  font-size: 14px;
+}
+
+/* ========== BUTTONS ========== */
+.btn {
+  font-size: 15px;
+  padding: 12px 28px;
+}
+
+.btn-primary {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .page-header h1 {
+    font-size: 32px;
+  }
+  
+  .page-header p {
+    font-size: 16px;
+  }
+  
+  .section-title {
+    font-size: 28px;
+  }
+  
+  .join-info-box {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+  }
+  
+  .join-icon {
+    margin: 0 auto;
+  }
+  
+  .join-content h3 {
+    font-size: 22px;
+  }
+  
+  .activation-box {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .activation-icon {
+    margin: 0 auto;
+  }
+  
+  .activation-content h3 {
+    font-size: 20px;
+  }
+  
+  .kontak-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .kontak-info {
+    grid-template-columns: 1fr;
+  }
+}
